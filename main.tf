@@ -38,11 +38,11 @@ locals {
 }
 
 
-module "vsftpd234-lab" {
+module "basic-terraform-lab" {
     source = "./modules/basic-terraform-lab"
     for_each = local.attendee_index_map
 
     attendee_number = each.value
     vpc_id          = aws_vpc.kali-vpc.id
-    route_table_id  = aws_route_table.FAST-route-table.id
+    route_table_id  = aws_route_table.kali-route-table.id
 }

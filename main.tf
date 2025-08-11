@@ -44,5 +44,5 @@ module "vsftpd234-lab" {
 
     attendee_number = each.value
     vpc_id          = aws_vpc.kali-vpc.id
-    route_table_id  = aws_route_table.FAST-route-table.id
+    route_table_id  = aws_route_table.kali-route-table.id
 }

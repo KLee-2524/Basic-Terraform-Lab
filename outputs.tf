@@ -1,6 +1,6 @@
 output "lab_instances" {
     value = {
-        for attendee, mod in module.vsftpd234-lab :
+        for attendee, mod in module.basic-terraform-lab :
         attendee => {
             kali_name   = module.basic-terraform-lab["${attendee}"].kali_details.name
             kali_pub_ip = module.basic-terraform-lab["${attendee}"].kali_details.pub_ip

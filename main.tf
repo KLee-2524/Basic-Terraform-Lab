@@ -38,7 +38,7 @@ locals {
 }
 
 
-module "vsftpd234-lab" {
+module "basic-terraform-lab" {
     source = "./modules/basic-terraform-lab"
     for_each = local.attendee_index_map
 

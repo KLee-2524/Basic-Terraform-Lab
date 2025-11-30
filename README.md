@@ -1,2 +1,2 @@
 # Basic-Terraform-Lab
-Personal portfolio copy of the Basic-Terraform-Lab Terraform infrastructure as code I created to help the Cal Poly Forensics and Security Technology Club (FAST) automatically deploy a Kali Linux and Windows VM in AWS and establish communication.
+Personal portfolio copy of the Basic-Terraform-Lab Terraform infrastructure as code I created to help the Cal Poly Forensics and Security Technology Club (FAST) automatically deploy a Kali Linux and Windows VM in AWS and establish communication. Cal Poly FAST Eboard [documentation](https://docs.google.com/document/d/1AR6fA2x0S0png0HI7JBAOFcgbocSiNlRLZF62kBz9ls/edit?usp=sharing) is available for training purposes.

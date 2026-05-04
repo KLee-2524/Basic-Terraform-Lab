@@ -1,12 +1,9 @@
 output "lab_instances" {
     value = {
         for attendee, mod in module.basic-terraform-lab :
-        attendee => {
-            kali_name   = module.basic-terraform-lab["${attendee}"].kali_details.name
-            kali_pub_ip = module.basic-terraform-lab["${attendee}"].kali_details.pub_ip
-            
+        attendee => { 
             target_name   = module.basic-terraform-lab["${attendee}"].target_details.name
-            target_pri_ip = module.basic-terraform-lab["${attendee}"].target_details.pri_ip
+            target_pub_ip = module.basic-terraform-lab["${attendee}"].target_details.pub_ip
         }
     }
 }

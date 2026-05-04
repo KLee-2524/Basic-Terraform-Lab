@@ -12,7 +12,7 @@ variable "kali_ami" {
 variable "winser22_ami" {
     description = "AMI of the WinSer22 VM to deploy"
     type        = string
-    default     = "ami-06fe666da1b90024e"
+    default     = "ami-06137cb527bfce12a"
 }
 
 variable "vpc_id" {

@@ -71,19 +71,3 @@ resource "aws_instance" "winser22-vm" {
     Name = "WinSer22-VM-${var.attendee_number}"
   }
 }
-
-resource "aws_instance" "kali-vm" {
-  ami           = var.kali_ami
-  instance_type = var.instance_type
-  subnet_id     = aws_subnet.kali-subnet.id
-  
-  vpc_security_group_ids = [aws_security_group.kali-sg.id]
-
-  user_data = var.kali_setup_script
-
-  key_name = "terraform-key-pair"
-
-  tags = {
-    Name = "KALI-VM-${var.attendee_number}"
-  }
-}
